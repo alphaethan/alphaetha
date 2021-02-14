@@ -4,102 +4,103 @@
     <meta charset="utf-8" >
 
 <title>股市一波动，鬼故事就出来了，那么地产就没事了吗 | THEONE</title>
-<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://alphaethan.github.io/favicon.ico?v=1613324134682">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://alphaethan.github.io/favicon.ico?v=1613324373020">
 <link rel="stylesheet" href="https://alphaethan.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="A股30年来90%的人亏钱，这是A股的大环境，所以亏钱是很正常的，当你亏钱的时候不要去找哪里做错了，因为在一个90%的亏钱的市场，基本都是错的，而是应该去找哪里做对了，然后把做对的地方继续加强，如果你老是去找哪里错了，你最后会发现全特喵都是..." />
+    <meta name="keywords" content="投资" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://alphaethan.github.io">THEONE</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://alphaethan.github.io">
+        <img src="https://alphaethan.github.io/images/avatar.png?v=1613324373020" class="site-logo">
+        <h1 class="site-title">THEONE</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="https://ethansu.com" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="https://ethansu.com" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="https://alphaethan.github.io/tags" class="menu">
-                作品集
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="https://alphaethan.github.io/post/hello" class="menu">
-                关于
-              </a>
-            
-          </li>
+          <a href="https://alphaethan.github.io/tags" class="site-nav">
+            作品集
+          </a>
         
-      </ul>
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://alphaethan.github.io/post/hello" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="alphaethan.github.io/blog/" target="_blank"> 
+  THEONE</a> | <a class="rss" href="https://alphaethan.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>股市一波动，鬼故事就出来了，那么地产就没事了吗</h1>
-            <p class="article-meta">
-              2021-02-08
-              
-                <a href="https://alphaethan.github.io/tag/BCne9gmyd/" class="badge warning">
-                  投资
-                </a>
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">股市一波动，鬼故事就出来了，那么地产就没事了吗</h2>
+            <div class="post-date">2021-02-08</div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <p>A股30年来90%的人亏钱，这是A股的大环境，所以亏钱是很正常的，当你亏钱的时候不要去找哪里做错了，因为在一个90%的亏钱的市场，基本都是错的，而是应该去找哪里做对了，然后把做对的地方继续加强，如果你老是去找哪里错了，你最后会发现全特喵都是错的，等你找明白了，都被市场割光了。<br>
 分散持有头部白马股，长期一定赚，靠谱的基金一样可以达到这样的效果。</p>
 <p>周末美国1.9万亿经济刺激计划获得众议院通过，全球货币放水还在延续。中期继续珍惜核心资产每次回调机会和陆续发酵通货膨胀的涨价潮机会。想要知道市场后期怎样，看成熟机构行为是很好的风向标参考，而长期加仓的北向资金已经表明了外围对于a股长期的看法，那就是一路加仓。</p>
@@ -114,88 +115,40 @@
 <p>继续炒房很明显短期已经不符合上头的要求了，至于哪些人最后会因为即将到来的房地产税被割肉放血。现在是市场价高于指导价，等房地产税一出，持有房产的人就会想为什么指导价不降下来。拭目以待吧。</p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="https://alphaethan.github.io/tag/BCne9gmyd/" class="tag">
+                    投资
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://alphaethan.github.io/images/avatar.png?v=1613324134682" class="no-responsive avatar">
-    <div class="text-muted">温故而知新</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://alphaethan.github.io/post/hello/">Hello World</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://alphaethan.github.io/post/gu-shi-yi-bo-dong-gui-gu-shi-jiu-chu-lai-liao-na-me-di-chan-jiu-mei-shi-liao-ma/">股市一波动，鬼故事就出来了，那么地产就没事了吗</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://alphaethan.github.io/tag/rBRA8C1qX/" class="badge success">
-          杂谈
-        </a>
-      
-        <a href="https://alphaethan.github.io/tag/BCne9gmyd/" class="badge success">
-          投资
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="alphaethan.github.io/blog/" target="_blank"> 
-  THEONE</a> | <a class="rss" href="https://alphaethan.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 
