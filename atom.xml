@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alphaethan.github.io</id>
     <title>THEONE</title>
-    <updated>2021-02-14T20:16:14.996Z</updated>
+    <updated>2021-02-14T20:19:19.261Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alphaethan.github.io"/>
     <link rel="self" href="https://alphaethan.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2021, THEONE</rights>
     <entry>
         <title type="html"><![CDATA[作品集]]></title>
-        <id>https://alphaethan.github.io/zuo-pin-ji/</id>
-        <link href="https://alphaethan.github.io/zuo-pin-ji/">
+        <id>https://alphaethan.github.io/Portfolio/</id>
+        <link href="https://alphaethan.github.io/Portfolio/">
         </link>
         <updated>2021-02-14T20:13:35.000Z</updated>
         <content type="html"><![CDATA[<p><img src="https://alphaethan.github.io/post-images/1613333678673.jpg" alt="" loading="lazy"><br>
