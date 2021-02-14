@@ -1,148 +1,153 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>Hello World | THEONE</title>
+<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alphaethan.github.io/favicon.ico?v=1613324373020">
+<link rel="shortcut icon" href="https://alphaethan.github.io/favicon.ico?v=1613324621465">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaethan.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="👏  大家好，我是 ETHAN SU ！
-✍️  水乡篷舍，鱼羹稻饭常餐，且听我关于生活、心情、知识、笔记、创意、理财碎碎念吧。
-🌱 关于发布的内容，会有很多不足，但请相信，我会不断完善和进步 🏃
-👋希望我可以成为你的可靠伙伴，如有..." />
-    <meta name="keywords" content="杂谈" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alphaethan.github.io">
-        <img src="https://alphaethan.github.io/images/avatar.png?v=1613324373020" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://alphaethan.github.io">
+        <img class="avatar" src="https://alphaethan.github.io/images/avatar.png?v=1613324621465" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://alphaethan.github.io">
         <h1 class="site-title">THEONE</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="https://ethansu.com" class="site-nav">
+          <a href="https://ethansu.com" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="https://alphaethan.github.io/tags" class="site-nav">
+          <a href="https://alphaethan.github.io/tags" class="menu purple-link">
             作品集
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
         
-          <a href="https://alphaethan.github.io/post/hello" class="site-nav">
+          <a href="https://alphaethan.github.io/post/hello" class="menu purple-link">
             关于
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="alphaethan.github.io/blog/" target="_blank"> 
-  THEONE</a> | <a class="rss" href="https://alphaethan.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">Hello World</h2>
-            <div class="post-date">2021-02-14</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Hello World</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-02-14</span>
             
-            <div class="post-content" v-pre>
-              <p>👏  大家好，我是 <strong>ETHAN SU</strong> ！</p>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://alphaethan.github.io/tag/rBRA8C1qX/">
+                    杂谈
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>👏  大家好，我是 <strong>ETHAN SU</strong> ！</p>
 <p>✍️  水乡篷舍，鱼羹稻饭常餐，且听我关于生活、心情、知识、笔记、创意、理财碎碎念吧。</p>
 <p>🌱 关于发布的内容，会有很多不足，但请相信，我会不断完善和进步 🏃</p>
 <p>👋希望我可以成为你的可靠伙伴，如有合作意向，请联系我！</p>
 <p>😘 Enjoy~</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://alphaethan.github.io/tag/rBRA8C1qX/" class="tag">
-                    杂谈
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://alphaethan.github.io/post/gu-shi-yi-bo-dong-gui-gu-shi-jiu-chu-lai-liao-na-me-di-chan-jiu-mei-shi-liao-ma/">
-                  <h3 class="post-title">
-                    股市一波动，鬼故事就出来了，那么地产就没事了吗
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://alphaethan.github.io/post/gu-shi-yi-bo-dong-gui-gu-shi-jiu-chu-lai-liao-na-me-di-chan-jiu-mei-shi-liao-ma/">
+              <h3 class="post-title">
+                下一篇：股市一波动，鬼故事就出来了，那么地产就没事了吗
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="alphaethan.github.io/blog/" target="_blank"> 
+  THEONE</a> | <a class="rss" href="https://alphaethan.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -152,8 +157,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
