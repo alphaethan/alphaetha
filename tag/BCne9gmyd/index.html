@@ -1,145 +1,213 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>投资 | THEONE</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alphaethan.github.io/favicon.ico?v=1613325978119">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    投资 | THEONE
+</title>
+<link rel="shortcut icon" href="https://alphaethan.github.io/favicon.ico?v=1613327916507">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaethan.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://alphaethan.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+</head>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="温故而知新">
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alphaethan.github.io">
-        <img src="https://alphaethan.github.io/images/avatar.png?v=1613325978119" class="site-logo">
-        <h1 class="site-title">THEONE</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="https://ethansu.com" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="https://alphaethan.github.io/tags" class="site-nav">
-            作品集
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="https://alphaethan.github.io/post/hello" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="alphaethan.github.io/blog/" target="_blank"> 
-  THEONE</a> | <a class="rss" href="https://alphaethan.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 投资</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alphaethan.github.io/post/gu-shi-yi-bo-dong-gui-gu-shi-jiu-chu-lai-liao-na-me-di-chan-jiu-mei-shi-liao-ma/">
-                  <h2 class="post-title">股市一波动，鬼故事就出来了，那么地产就没事了吗</h2>
-                </a>
-                <div class="post-date">
-                  2021-02-08
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-  
-</div>
-
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://alphaethan.github.io">
+                <img class="avatar" src="https://alphaethan.github.io/images/avatar.png?v=1613327916507" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    THEONE
+                </h1>
+            </div>
         </div>
-      </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="https://ethansu.com" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://alphaethan.github.io/tags" class="menu">
+                                    作品集
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://alphaethan.github.io/post/hello" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-AOS.init();
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+        });
+    });
 </script>
 
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        投资</b>
+    </div>
+    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://alphaethan.github.io/post/gu-shi-yi-bo-dong-gui-gu-shi-jiu-chu-lai-liao-na-me-di-chan-jiu-mei-shi-liao-ma/">
+                        股市一波动，鬼故事就出来了，那么地产就没事了吗
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-02-08</time>
+                    
+                        <a href="https://alphaethan.github.io/tag/BCne9gmyd/" class="post-tag i-tag
+                            i-tag-other_2">
+            #投资
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            A股30年来90%的人亏钱，这是A股的大环境，所以亏钱是很正常的，当你亏钱的时候不要去找哪里做错了，因为在一个90%的亏钱的市场，基本都是错的，而是应该去找哪里做对了，然后把做对的地方继续加强，如果你老是去找哪里错了，你最后会发现全特喵都是错的，等你找明白了，都被市场割光了。
+分散持有头部白马股，长期一定赚，靠谱的基金一样可以达到这样的效果。
+周末美国1.9万亿经济刺激计划获得众议院通过，全球货币放水还在延续。中期继续珍惜核心资产每次回调机会和陆续发酵通货膨胀的涨价潮机会。想要知道市场后期怎样，看成熟机构行为是很好的风向标参考，而长期加仓的北向资金已经表明了外围对于a股长期的看法，那就是一路加仓。
+要我说，25%上下波动，完全是正常的市场行为，没必要找什么利好和利空，公司基本面没问题，长期一定是重心向上。就像a股，30年再拉垮，也是整体趋势向上的。
+……
+深圳的房地产出了个消息，我放出来大家自己看下，有点重磅。后面的配套措施让我浮想联翩。。
+早在去年，市场就已经开始传出深圳将推出二手房价格参考机制，但未见措施落地。2020年，深圳二手房市场乱象频出，挂牌价虚高，频繁调价，抱团涨价……相关部门也已经多次出手整治市场，但绝大多数片区的二手房价格大涨让购房者“压力山大”。
+现状就是，参考价低于市场挂牌价和成交价，特别是高价豪宅和优质学区房的“价差”更为明显。豪宅挂牌价和指导价差额达到几百万的比比皆是。
+普遍情况下，正常业主是不可能主动因为这个事情，就调低价格的反馈，至于有没有买家能以这个“参考价”买到二手房，就要让子弹飞一会了，以观其效。
+重点在于，如果银行按照参考价来评估放贷，会对二手房价格形成巨大冲击。
+继续炒房很明显短期已经不符合上头的要求了，至于哪些人最后会因为即将到来的房地产税被割肉放血。现在是市场价高于指导价，等房地产税一出，持有房产的人就会想为什么指导价不降下来。拭目以待吧。
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://alphaethan.github.io/post/gu-shi-yi-bo-dong-gui-gu-shi-jiu-chu-lai-liao-na-me-di-chan-jiu-mei-shi-liao-ma/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://alphaethan.github.io/images/avatar.png?v=1613327916507)">
+        </div>
+        <h1 class="id_card-title">
+            THEONE
+        </h1>
+        <h2 class="id_card-description">
+            温故而知新
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+
+                </div>
+            </div>
 
 
 
+            <div class="site-footer">
+  Powered by <a href="alphaethan.github.io/blog/" target="_blank"> 
+  THEONE</a> | 
+  <a class="rss" href="https://alphaethan.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-  </body>
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
 </html>
